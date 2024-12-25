@@ -1,8 +1,24 @@
+@token=eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJpZCI6MSwiaXNzIjoibG9jYWxob3N0IiwiaWF0IjoxNzM1MTE3MjUwLCJleHAiOjE3MzUyMDM2NTB9.iNdjGTKqRJWlHTrdrbbr61HcFwXwpGYRmRjkv0YtswA
+
+
 ### Login ###
 POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-    "email": "example@example.com",
-    "password":"123456"
+    "email": "diner.ragib@gmail.com",
+    "password":"newpassword"
+}
+
+### Profile ###
+GET http://localhost:3000/api/user/profile 
+Cookie: token={{token}}
+
+### Update Profile ###
+POST http://localhost:3000/api/user/profile
+Content-Type: application/json
+Cookie: token={{token}}
+
+{
+    "firstName":"Iftari"
 }

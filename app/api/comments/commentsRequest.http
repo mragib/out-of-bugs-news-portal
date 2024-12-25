@@ -1,0 +1,30 @@
+@token =eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImRpbmVyLnJhZ2liQGdtYWlsLmNvbSIsImlkIjo1LCJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MzUxMjc5MjMsImV4cCI6MTczNTIxNDMyM30.KbEqDJksFcgvFsVMxcatf7GmLhAzGf1U_v-7sqnl8h8
+
+### Get all Comments for a news ###
+GET http://localhost:3000/api/comments/news?newsId=1
+
+
+### Get all Comments by a user ###
+GET http://localhost:3000/api/comments/manage
+Cookie: token={{token}}
+
+
+### Create a new Comment ###
+POST http://localhost:3000/api/comments/manage
+Content-Type: application/json
+Cookie: token={{token}}
+
+{
+    "postID": 1,
+    "descriptions": "i have to delete it"
+}
+
+
+### Delete a comment ###
+DELETE http://localhost:3000/api/comments/manage
+Content-Type: application/json
+Cookie: token={{token}}
+
+{
+    "id":6
+}

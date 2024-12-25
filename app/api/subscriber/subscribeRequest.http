@@ -1,0 +1,7 @@
+### Create a subscriber ###
+POST  http://localhost:3000/api/subscriber
+Content-Type: application/json
+
+{
+    "email": "test1@example.com"
+}

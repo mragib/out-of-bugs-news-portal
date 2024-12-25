@@ -1,0 +1,15 @@
+### create a social ###
+POST http://localhost:3000/api/social
+Content-Type: application/json
+
+{
+    "facebook":"test",
+    "youtube":"cookie",
+    "twitter":"test",
+    "linkedin":"cookie",
+    "about":"test",
+    "address":"cookie"
+}
+
+### Get a social ###
+GET http://localhost:3000/api/social

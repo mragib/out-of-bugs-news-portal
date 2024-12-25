@@ -1,0 +1,12 @@
+### Get news by Category ###
+GET http://localhost:3000/api/news/category?catId=1
+
+### Get news by type ###
+GET http://localhost:3000/api/news/type?type=Featured
+
+
+### Get news by search ###
+GET http://localhost:3000/api/news/search?keyword=ostad
+
+### Get news by details ###
+GET http://localhost:3000/api/news/details?id=3

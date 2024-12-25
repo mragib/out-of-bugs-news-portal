@@ -1,0 +1,11 @@
+### create a policy ###
+POST http://localhost:3000/api/policy
+Content-Type: application/json
+
+{
+    "long_des":"test",
+    "type":"cookie"
+}
+
+### get policy ###
+GET http://localhost:3000/api/policy?type=terms

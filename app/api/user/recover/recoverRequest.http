@@ -1,2 +1,22 @@
 ### Send a verification code ###
-GET http://localhost:3000/api/user/recover/verifyEmail?email=example@example.com
+GET http://localhost:3000/api/user/recover/verifyEmail?email=diner.ragib@gmail.com
+
+### verify OTP ###
+POST http://localhost:3000/api/user/recover/verifyOTP
+Content-Type: application/json
+
+{
+    "email": "diner.ragib@gmail.com",
+    "otp": "279164"
+}
+
+
+### Reset password ###
+POST http://localhost:3000/api/user/recover/resetPassword
+Content-Type: application/json
+
+{
+    "email": "diner.ragib@gmail.com",
+    "otp":"279164",
+    "password":"newpassword"
+}
