@@ -1,0 +1,11 @@
+### register ###
+POST http://localhost:3000/api/user/registration
+Content-Type: application/json
+
+{
+    "firstName":"Md Ragib",
+    "lastName":"Shahriar",
+    "email":"diner.ragib@gmail.com",
+    "mobile":"01714906170",
+    "password":"123456"
+}
