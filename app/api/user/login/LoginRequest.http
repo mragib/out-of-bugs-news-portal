@@ -1,4 +1,4 @@
-@token=eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJpZCI6MSwiaXNzIjoibG9jYWxob3N0IiwiaWF0IjoxNzM1MTE3MjUwLCJleHAiOjE3MzUyMDM2NTB9.iNdjGTKqRJWlHTrdrbbr61HcFwXwpGYRmRjkv0YtswA
+@token="eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImRpbmVyLnJhZ2liQGdtYWlsLmNvbSIsImlkIjo1LCJpYXQiOjE3Mzc0NzEyODEsImlzcyI6IkxvY2FsaG9zdCIsImV4cCI6MTczNzU1NzY4MX0.1O30ywchKdquACENzgqyjU_cmtBakUmMz3NMR4Ni8VQ
 
 
 ### Login ###
@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "email": "diner.ragib@gmail.com",
-    "password":"newpassword"
+    "password":"123456"
 }
 
 ### Profile ###

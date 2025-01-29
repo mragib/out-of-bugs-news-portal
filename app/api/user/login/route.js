@@ -15,12 +15,25 @@ export async function POST(req, res) {
 
     const token = await CreateToken(result.email, result.id);
     const expires = new Date(Date.now() + 24 * 60 * 60 * 1000).toUTCString();
-    const cookieString = `token="${token};expires="${expires};path=/`;
+    const cookieString = `token=${token};expires=${expires};path=/`;
 
     return NextResponse.json(
       { status: "success", data: token },
       { headers: { "set-cookie": cookieString } }
     );
+  } catch (error) {
+    return NextResponse.json({ status: "fail", data: error.message });
+  }
+}
+
+export async function GET(req, res) {
+  try {
+    const expires = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    const response = NextResponse.redirect(new URL("/", req.url), 303);
+
+    response.cookies.set("token", "", { expires: expires });
+
+    return response;
   } catch (error) {
     return NextResponse.json({ status: "fail", data: error.message });
   }

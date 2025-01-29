@@ -10,3 +10,7 @@ GET http://localhost:3000/api/news/search?keyword=ostad
 
 ### Get news by details ###
 GET http://localhost:3000/api/news/details?id=3
+
+
+### Get news Latest ###
+GET http://localhost:3000/api/news/latest
